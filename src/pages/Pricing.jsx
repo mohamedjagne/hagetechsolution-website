@@ -32,6 +32,7 @@ export default function Pricing() {
     supply: false,
     manufacturing: false,
     electricityWater: false,
+    ngoHumanitarianOrg: false,
   });
 
   const [services, setServices] = useState({
@@ -41,24 +42,24 @@ export default function Pricing() {
   });
 
   const integratorConfig = [
-    { id: "sms", label: "SMS", description: "SMS notifications", cost: 1500 },
+    { id: "sms", label: "SMS", description: "SMS notifications", cost: 500 },
     {
       id: "whatsapp",
       label: "WhatsApp",
       description: "WhatsApp messaging",
-      cost: 1500,
+      cost: 500,
     },
     {
       id: "paymentGateway",
       label: "Payment Gateway",
       description: "Payment processing",
-      cost: 2000,
+      cost: 700,
     },
     {
       id: "biometrics",
       label: "Biometrics",
       description: "Biometric authentication",
-      cost: 1800,
+      cost: 700,
     },
   ];
 
@@ -67,67 +68,86 @@ export default function Pricing() {
       id: "salesCRM",
       label: "Sales & CRM",
       description: "Sales, Invoicing, Subscriptions, Rental, CRM",
+      cost: 300,
     },
     {
       id: "website",
       label: "Website",
       description: "Website, Ecommerce, Forum",
+      cost: 800,
     },
     {
       id: "humanResources",
       label: "Human Resources",
       description: "Recruitment, Time Off, Appraisals, Expenses",
+      cost: 500,
     },
     {
       id: "supply",
       label: "Supply Chain",
       description: "Procurements, Inventory",
+      cost: 600,
     },
     {
       id: "finance",
       label: "Finance",
       description: "Accounting, Expenses, Consolidation, Asset, & Analytics",
+      cost: 850,
     },
     {
       id: "manufacturing",
       label: "Manufacturing",
       description: "MRP, PLM, Quality, Maintenance",
+      cost: 1200,
     },
     {
       id: "pointOfSale",
       label: "Point of Sale",
       description: "Shop, Restaurants",
+      cost: 500,
     },
-    {
-      id: "electricityWater",
-      label: "Electricity & Water",
-      description: "Utility Billing, Meter Management, Consumption Reports",
-    },
+    // {
+    //   id: "electricityWater",
+    //   label: "Electricity & Water",
+    //   description: "Utility Billing, Meter Management, Consumption Reports",
+    //   cost: 0,
+    // },
     {
       id: "realEstate",
       label: "Real Estate & Construction",
       description:
         "Property Management, Work Orders, Planners, Project Reports & Dashboards",
+      cost: 1500,
     },
     {
       id: "hospital",
       label: "Hospital",
       description: "Patients, Physicians, Lab, Insurance & more",
+      cost: 2500,
     },
+    // {
+    //   id: "logistics",
+    //   label: "Logistics",
+    //   description: "Fleet Management, Route Planning, Shipping",
+    //   cost: 0,
+    // },
+    // {
+    //   id: "microfinance",
+    //   label: "Microfinance",
+    //   description: "Loans, Repayments, Savings, Interest Management",
+    //   cost: 0,
+    // },
+    // {
+    //   id: "insurance",
+    //   label: "Insurance",
+    //   description: "Policies, Claims, Premiums, Renewals",
+    //   cost: 0,
+    // },
     {
-      id: "logistics",
-      label: "Logistics",
-      description: "Fleet Management, Route Planning, Shipping",
-    },
-    {
-      id: "microfinance",
-      label: "Microfinance",
-      description: "Loans, Repayments, Savings, Interest Management",
-    },
-    {
-      id: "insurance",
-      label: "Insurance",
-      description: "Policies, Claims, Premiums, Renewals",
+      id: "ngo-humanitarian-org",
+      label: "NGO & Humanitarian Organizations",
+      description: "Programs, Grants, Donor Management, Procurement, Field Operations, M&E Dashboards",
+      cost: 1200,
     },
   ];
 
@@ -137,36 +157,37 @@ export default function Pricing() {
       label: "Business Analysis",
       description:
         "Process mapping, requirements gathering, and solution design.",
-      cost: 2500,
+      cost: 500,
     },
     {
       id: "dataMigration",
       label: "Data Migration",
       description: "Import and validation of your legacy system data.",
-      cost: 3000,
+      cost: 500,
     },
     {
       id: "customizations",
       label: "Customizations",
       description: "Custom forms, reports, and workflow adjustments.",
-      cost: 2000,
+      cost: 1000,
     },
   ];
 
   const cost = useMemo(() => {
     let total = 0;
 
-    total += Math.max(basicInfo.companies, 0) * 500;
+    total += Math.max(basicInfo.companies, 0) * 600;
     total += Math.max(basicInfo.branches, 0) * 300;
-    total += Math.max(basicInfo.currencies, 0) * 200;
-    total += Math.max(basicInfo.users, 0) * 100;
+    total += Math.max(basicInfo.currencies, 0) * 100;
+    total += Math.max(basicInfo.users, 0) * 70;
 
     total += integratorConfig
       .filter((item) => integrations[item.id])
       .reduce((sum, item) => sum + item.cost, 0);
 
-    const selectedModuleCount = Object.values(modules).filter(Boolean).length;
-    total += selectedModuleCount * 1200;
+    total += moduleConfig
+      .filter((item) => modules[item.id])
+      .reduce((sum, item) => sum + item.cost, 0);
 
     total += serviceConfig
       .filter((item) => services[item.id])
@@ -406,7 +427,7 @@ export default function Pricing() {
                         Companies ({basicInfo.companies})
                       </span>
                       <span className="font-medium text-[var(--foreground)]">
-                        ${(basicInfo.companies * 500).toLocaleString()}
+                        ${(basicInfo.companies * 600).toLocaleString()}
                       </span>
                     </div>
                   )}
@@ -473,9 +494,10 @@ export default function Pricing() {
                       </span>
                       <span className="font-medium text-[var(--foreground)]">
                         $
-                        {(
-                          Object.values(modules).filter(Boolean).length * 1200
-                        ).toLocaleString()}
+                        {moduleConfig
+                          .filter((item) => modules[item.id])
+                          .reduce((sum, item) => sum + item.cost, 0)
+                          .toLocaleString()}
                       </span>
                     </div>
                   )}

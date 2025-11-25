@@ -135,7 +135,7 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 bg-gradient-to-br from-[var(--primary)]/5 to-transparent overflow-hidden">
+      <section className="relative py-10 bg-gradient-to-br from-[var(--primary)]/5 to-transparent overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
@@ -158,7 +158,7 @@ export default function Home() {
             {/* Right Image */}
             <div className="relative h-80 md:h-96 rounded-lg overflow-hidden">
               <img
-                src="/business-team-working-on-erp-software-dashboard.jpg"
+                src="/hero-image.JPG"
                 alt="Team working on Odoo ERP implementation"
                 className="w-full h-full object-cover"
               />
