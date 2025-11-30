@@ -74,8 +74,8 @@ export default function Home() {
     { name: "Alqudus Pharmaceuticals", src: "/clients/alqudus-pharma.jpeg" },
     { name: "Alamin Pharmaceuticals", src: "/clients/alamin-pharma.jpeg" },
     {
-      name: "Optimum General Trading Company",
-      src: "/clients/optimum-gtc.jpeg",
+      name: "Muuqaal Building Materials",
+      src: "/clients/mbm.jpeg",
     },
     { name: "MGT", src: "/clients/mgt.jpeg" },
   ];
@@ -145,7 +145,7 @@ export default function Home() {
                   Digital Transformation
                 </p>
                 <h1 className="text-4xl md:text-5xl font-bold text-[var(--foreground)] leading-tight">
-                  Transform Your Business with Odoo ERP
+                Be Smart,Be Profitable with Hage tech solution
                 </h1>
               </div>
               <p className="text-lg text-[var(--muted-foreground)]">

@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom"
-import Button from "../components/ui/Button"
-import { CheckCircle, Users, Target, Lightbulb } from "lucide-react"
+import { Link } from "react-router-dom";
+import Button from "../components/ui/Button";
+import { CheckCircle, Users, Target, Lightbulb } from "lucide-react";
 
 export default function About() {
   const team = [
@@ -28,32 +28,40 @@ export default function About() {
       bio: "Specialized in organizational change management",
       avatar: "/placeholder.svg?key=emma1",
     },
-  ]
+  ];
 
   const values = [
     {
       icon: Target,
-      title: "Excellence",
-      description: "We deliver high-quality solutions that exceed expectations.",
+      title: "Customer Service",
+      description:
+        "We focus on delivering real results for our clients. Every system we build is designed to create clarity, efficiency, and measurable business impact.",
     },
     {
       icon: Users,
-      title: "Partnership",
-      description: "We work closely with our clients as true partners.",
+      title: "Partnership & Collaboration",
+      description: "We work closely with our clients as long-term partners, listening, advising, and co-creating solutions that fit their unique needs.",
     },
     {
       icon: Lightbulb,
-      title: "Innovation",
-      description: "We leverage the latest technology and best practices.",
+      title: "Integrity & data protection",
+      description: "We protect client data with the highest level of confidentiality and responsibility. Trust, transparency, and ethical practice guide everything we do.",
     },
     {
       icon: CheckCircle,
-      title: "Reliability",
-      description: "You can count on us to deliver on our promises.",
+      title: "Excellence in delivery",
+      description: "We implement Odoo with precision, discipline, and attention to detail, ensuring high-quality systems that perform and scale reliably.",
     },
-  ]
+  ];
 
-  const industries = ["Retail", "Manufacturing", "Trading", "Healthcare", "Education", "Logistics"]
+  const industries = [
+    "Retail",
+    "Manufacturing",
+    "Trading",
+    "Healthcare",
+    "Education",
+    "Logistics",
+  ];
 
   return (
     <main>
@@ -66,14 +74,20 @@ export default function About() {
                 About HageTech Solutions
               </h1>
               <p className="text-lg text-[var(--muted-foreground)]">
-                We are a leading Odoo ERP consulting and implementation company dedicated to transforming businesses
-                through digital solutions. With 15+ years of expertise, we have successfully helped hundreds of
-                organizations achieve their operational goals.
+                We are a leading Odoo ERP consulting and implementation company
+                dedicated to transforming businesses through smart digital
+                solutions. With a proven 91% implementation success rate and
+                experience delivering over 20+ ERP projects, we help
+                organizations streamline operations, gain real-time visibility,
+                and scale with confidence. Our solutions are designed to replace
+                manual processes and outdated systems with a modern, fully
+                integrated Odoo platform that drives efficiency and long-term
+                growth.
               </p>
             </div>
             <div className="relative h-80 md:h-96">
               <img
-                src="/hagetechsolution-office.jpeg"
+                src="/hero-image.JPG"
                 alt="HageTech Solutions office"
                 className="w-full h-full object-cover rounded-lg border border-[var(--border)]"
               />
@@ -87,43 +101,61 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="p-8 rounded-lg border border-[var(--border)] bg-gradient-to-br from-[var(--primary)]/5 to-transparent">
-              <h3 className="text-xl font-bold text-[var(--foreground)] mb-4">Our Mission</h3>
+              <h3 className="text-xl font-bold text-[var(--foreground)] mb-4">
+                Our Mission
+              </h3>
               <p className="text-[var(--muted-foreground)]">
-                To empower businesses with transformative Odoo ERP solutions that drive efficiency, scalability, and
-                sustainable growth.
+                To empower businesses with transformative Odoo ERP solutions
+                that drive efficiency, scalability, and sustainable growth.
               </p>
             </div>
             <div className="p-8 rounded-lg border border-[var(--border)] bg-gradient-to-br from-[var(--accent)]/5 to-transparent">
-              <h3 className="text-xl font-bold text-[var(--foreground)] mb-4">Our Vision</h3>
+              <h3 className="text-xl font-bold text-[var(--foreground)] mb-4">
+                Our Vision
+              </h3>
               <p className="text-[var(--muted-foreground)]">
-                To be the most trusted partner for digital transformation across all business sectors and geographies.
+                Our mission is to design and implement smart, scalable, and
+                reliable Odoo ERP solutions that eliminate manual processes,
+                create clarity, and drive sustainable business growth across the
+                region.
               </p>
             </div>
             <div className="p-8 rounded-lg border border-[var(--border)] bg-gradient-to-br from-[var(--secondary)]/5 to-transparent">
-              <h3 className="text-xl font-bold text-[var(--foreground)] mb-4">Our Values</h3>
+              <h3 className="text-xl font-bold text-[var(--foreground)] mb-4">
+                Core Purpose
+              </h3>
               <p className="text-[var(--muted-foreground)]">
-                Integrity, excellence, collaboration, and continuous innovation guide everything we do.
+                To enable organizations across the Horn of Africa to operate
+                with clarity, efficiency, and strategic control by building
+                reliable, scalable, and integrated digital systems that support
+                long-term growth and operational excellence.
               </p>
             </div>
           </div>
 
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">What We Stand For</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+              What We Stand For
+            </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, idx) => {
-              const Icon = value.icon
+              const Icon = value.icon;
               return (
                 <div
                   key={idx}
                   className="p-6 rounded-lg border border-[var(--border)] bg-[var(--card)] hover:shadow-lg transition-shadow"
                 >
                   <Icon className="text-[var(--primary)] mb-4" size={28} />
-                  <h3 className="text-lg font-bold text-[var(--foreground)] mb-2">{value.title}</h3>
-                  <p className="text-sm text-[var(--muted-foreground)]">{value.description}</p>
+                  <h3 className="text-lg font-bold text-[var(--foreground)] mb-2">
+                    {value.title}
+                  </h3>
+                  <p className="text-sm text-[var(--muted-foreground)]">
+                    {value.description}
+                  </p>
                 </div>
-              )
+              );
             })}
           </div>
         </div>
@@ -133,16 +165,21 @@ export default function About() {
       <section className="py-20 bg-[var(--muted)]/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">Our Expertise</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+              Our Expertise
+            </h2>
             <p className="text-[var(--muted-foreground)] max-w-2xl mx-auto">
-              Decades of combined experience across multiple industries and Odoo versions.
+              Decades of combined experience across multiple industries and Odoo
+              versions.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="space-y-6">
               <div>
-                <h3 className="text-lg font-bold text-[var(--foreground)] mb-2">Industries</h3>
+                <h3 className="text-lg font-bold text-[var(--foreground)] mb-2">
+                  Industries
+                </h3>
                 <div className="flex flex-wrap gap-2">
                   {industries.map((industry) => (
                     <span
@@ -203,7 +240,8 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Partner With Us?</h2>
           <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
-            Let's discuss how HageTech Solutions can help transform your business.
+            Let's discuss how HageTech Solutions can help transform your
+            business.
           </p>
           <Button className="inline-flex items-center gap-2 bg-[var(--primary-foreground)] text-[var(--primary)] hover:opacity-90 hover:bg-[var(--primary-foreground)]/90 px-6 py-3 rounded-lg">
             <Link to="/contact">Contact Us Today</Link>
@@ -211,5 +249,5 @@ export default function About() {
         </div>
       </section>
     </main>
-  )
+  );
 }

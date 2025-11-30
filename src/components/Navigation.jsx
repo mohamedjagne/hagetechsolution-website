@@ -45,7 +45,7 @@ export default function Navigation() {
 
   const caseLinks = [
     { to: "/case-studies", label: "Customers" },
-    { to: "/success-stories", label: "Success Stories" },
+    // { to: "/success-stories", label: "Success Stories" }, // Hidden for now - can be enabled later
   ];
 
   return (

@@ -16,11 +16,11 @@ export const caseStudies = [
     description:
       "Gondogoye is a premier construction firm specializing in large-scale infrastructure projects including roads, bridges, and commercial buildings. Facing challenges with disjointed communication between field sites and HQ, they needed a robust solution to centralize operations.",
     challenge:
-      "Managing multiple remote construction sites led to data silos, delayed material procurement, and difficulty in tracking real-time project costs. Manual reporting caused significant lags in decision-making.",
+      "GondoGooye Construction operated multiple remote project sites, each using separate tools and disconnected processes. This led to data silos, delays in material procurement, and difficulty tracking project expenses in real time.Manual reporting created inconsistencies and slowed down decision-making, making it hard for management to gain a clear view of project performance, budgets, and resource usage.",
     solution:
-      "We implemented a comprehensive Odoo ERP solution tailored for construction. This included modules for Project Management, Inventory, Purchase, and Accounting, all accessible via mobile for field engineers to update progress in real-time.",
+      "Hage Tech Solutions implemented a comprehensive Odoo ERP system tailored specifically for construction operations.The solution unified: Project Management, Inventory & Material Tracking, Procurement & Purchase Management, Accounting & Job Costing. All modules are fully integrated and accessible in real time, allowing field engineers and management to monitor progress, track costs, and manage materials across multiple sites with accuracy and confidence.",
     about:
-      "Established in 2010, Gondogoye has grown to become a leader in the Somali construction sector, known for delivering quality infrastructure projects on time and within budget.",
+      "GondoGooye Construction is a premier engineering and construction firm recognized as the Best Construction Company in Somalia – 2025.The company specializes in large-scale infrastructure projects, including roads, bridges, residential developments, and commercial buildings.Faced with challenges related to communication gaps between field sites and headquarters, GondoGooye sought a robust ERP solution to centralize operations and improve project visibility.",
     results: [
       "Reduced project completion time by 30% through better resource allocation.",
       "Cut material wastage by 15% with precise inventory tracking.",
@@ -69,11 +69,11 @@ export const caseStudies = [
     description:
       "As a major pharmaceutical distributor, Alqudus deals with sensitive inventory that requires strict expiry tracking and batch management. Their previous manual systems posed risks of stockouts and expired goods reaching the market.",
     challenge:
-      "Inefficient inventory tracking led to high rates of expired stock and occasional shortages of critical medicines. Compliance reporting was also a manual, error-prone nightmare.",
+      "Al-Qudus Pharmaceuticals relied on manual processes and disconnected tools to manage inventory, purchases, and sales operations. This created stock inaccuracies, difficulty tracking batch numbers and expiry dates, delays in procurement planning, and challenges maintaining accurate product availability.Financial reporting was also heavily manual, leading to slow decision-making and limited visibility into overall business performance.",
     solution:
-      "We deployed a specialized inventory management system with FEFO (First Expired, First Out) logic, automated reordering points, and batch tracking. This was integrated with a B2B portal for pharmacies to place orders directly.",
+      "Hage Tech Solution implemented a fully integrated Odoo ERP system tailored to pharmaceutical operations. The solution streamlined and automated essential processes, including: Inventory & Batch Tracking, Expiry Date Management, Purchase & Supplier Management, Sales & POS Integration, Accounting & Financial Reporting. The new system gives management real-time visibility into stock levels, fast-moving items, expiry-sensitive products, and financial performance. Automated workflows ensure accurate replenishment, improved compliance, and smooth coordination across all functions.",
     about:
-      "Alqudus Pharmaceuticals is dedicated to improving healthcare access by providing high-quality, affordable medicines to healthcare providers across the region.",
+      "Al-Qudus Pharmaceuticals is a respected pharmaceutical supplier in Somalia, providing trusted medical products to pharmacies, clinics, and healthcare providers.As the company expanded its product catalog and customer base, it required a modern ERP system to improve operational control, prevent stock discrepancies, and enhance financial accuracy.Hage Tech Solution delivered a unified digital system that supports the company’s growth, efficiency, and long-term operational excellence",
     results: [
       "Reduced expired stock losses by 90% within the first year.",
       "Improved order fulfillment speed by 40%.",
@@ -118,11 +118,11 @@ export const caseStudies = [
     description:
       "Alamin operates a chain of retail pharmacies. They struggled with disjointed systems where each branch operated as an island, making it impossible to have a clear view of total company performance or share stock between locations.",
     challenge:
-      "Lack of centralized data meant popular items would sell out at one branch while sitting unsold at another. Financial reconciliation at the end of the month was a slow, painful process.",
+      "Al-amiin Pharmaceuticals relied on manual processes and disconnected tools to manage inventory, purchases, and sales operations. This created stock inaccuracies, difficulty tracking batch numbers and expiry dates, delays in procurement planning, and challenges maintaining accurate product availability. Financial reporting was also heavily manual, leading to slow decision-making and limited visibility into overall business performance.",
     solution:
-      "We implemented a multi-company Odoo environment connecting all POS terminals to a central database. We added features for inter-branch transfers and a centralized dashboard for sales and inventory analysis.",
+      "Hage Tech Solution implemented a fully integrated Odoo ERP system tailored to pharmaceutical operations. The solution streamlined and automated essential processes, including: Inventory & Batch Tracking, Expiry Date Management, Purchase & Supplier Management, Sales & POS Integration, Accounting & Financial Reporting. The new system gives management real-time visibility into stock levels, fast-moving items, expiry-sensitive products, and financial performance. Automated workflows ensure accurate replenishment, improved compliance, and smooth coordination across all functions.",
     about:
-      "Alamin Pharmaceuticals is a trusted name in retail pharmacy, serving thousands of customers daily with a focus on professional advice and genuine products.",
+      "Al-amin Pharmaceuticals is a respected pharmaceutical supplier in Somalia, providing trusted medical products to pharmacies, clinics, and healthcare providers. As the company expanded its product catalog and customer base, it required a modern ERP system to improve operational control, prevent stock discrepancies, and enhance financial accuracy. Hage Tech Solution delivered a unified digital system that supports the company's growth, efficiency, and long-term operational excellence.",
     results: [
       "Increased overall sales by 25% through better stock availability.",
       "Reduced inter-branch transfer times from days to hours.",
@@ -152,26 +152,26 @@ export const caseStudies = [
   },
   {
     id: 4,
-    name: "Optimum General Trading Company",
-    company: "Optimum General Trading Company",
-    category: "General Trading",
-    industry: "General Trading",
+    name: "Muuqaal Building Materials",
+    company: "Muuqaal Building Materials",
+    category: "Retailer",
+    industry: "Building Materials",
     country: "Somalia",
     city: "Mogadishu",
     phone: "+252 61 500 0004",
-    email: "trade@optimumgtc.com",
+    email: "info@muuqaal.com",
     headline: "Global Sourcing Made Simple with Digital Procurement.",
     title: "Streamlining Import/Export Operations for Diverse Product Lines.",
     blurb:
-      "Optimum GTC modernized their trading operations to handle multi-currency transactions and complex logistics for their global import business.",
+      "Muuqaal Building Materials modernized their trading operations to handle multi-currency transactions and complex logistics for their global import business.",
     description:
-      "Dealing in everything from electronics to construction materials, Optimum GTC faces the complexity of managing diverse suppliers, fluctuating exchange rates, and complicated shipping logistics.",
+      "Dealing in construction materials, Muuqaal Building Materials faces the complexity of managing diverse suppliers, fluctuating exchange rates, and complicated shipping logistics.",
     challenge:
       "Tracking landed costs (product cost + shipping + taxes) was done on spreadsheets, leading to inaccurate pricing and margin erosion. Currency fluctuations often ate into profits before they were noticed.",
     solution:
       "We set up a trading-focused ERP with strong Landed Cost features and multi-currency support. The system automatically calculates the final cost of items upon receipt, ensuring accurate pricing strategies.",
     about:
-      "Optimum General Trading Company is a dynamic trading house bridging the gap between global manufacturers and the local market.",
+      "Muuqaal Building Materials is a dynamic trading house bridging the gap between global manufacturers and the local market.",
     results: [
       "Achieved 99% accuracy in product costing and margin calculation.",
       "Reduced customs clearance delays by 20% with organized documentation.",
@@ -189,14 +189,14 @@ export const caseStudies = [
     ],
     metric: "99%",
     metricLabel: "Accuracy in Costing",
-    coverImage: "/clients/optimum-gtc.jpeg",
-    image: "/clients/optimum-gtc.jpeg",
-    logo: "/clients/optimum-gtc.jpeg",
+    coverImage: "/clients/mbm.jpeg",
+    image: "/clients/mbm.jpeg",
+    logo: "/clients/mbm.jpeg",
     testimonial: {
-      name: "Fatima Noor",
-      role: "Procurement Head",
-      company: "Optimum GTC",
-      text: "Knowing the exact landed cost of every item the moment it arrives has saved us from so many pricing errors. It's an essential tool for our trading business.",
+      name: "Ahmed Mohamed",
+      role: "CEO",
+      company: "Muuqaal Building Materials",
+      text: "The Odoo system HageTech implemented has become central to our operations. It has helped us streamline our operations and improve our efficiency.",
     }
   },
   {
@@ -216,11 +216,11 @@ export const caseStudies = [
     description:
       "Jameeco Weyn is a leading retailer specializing in automotive and machinery spare parts. They struggled with managing thousands of SKUs across multiple categories, leading to frequent stockouts of popular items and overstocking of slow-moving parts.",
     challenge:
-      "Manual inventory tracking made it difficult to know what was in stock, leading to lost sales when customers couldn't find needed parts. Slow-moving inventory tied up capital, while fast-moving items were often out of stock.",
+      "Jameeco Weyn Auto Spare Parts struggled with manual stock tracking, inconsistent pricing, and difficulty managing thousands of fast-moving automotive items. Inventory errors, delayed supplier planning, and manual sales reporting made it hard for management to access accurate stock levels, customer balances, and real-time financial insights—especially with high daily transaction volume.",
     solution:
-      "We implemented a comprehensive inventory management system with automated reordering, barcode scanning, and real-time stock visibility. The system includes a customer portal for checking part availability and placing orders online.",
+      "Hage Tech Solution implemented a fully integrated Odoo ERP designed for high-volume spare parts businesses. The system unified: Inventory & Product Category Management, Sales, Invoicing & Customer Credit Control, Purchase & Supplier Management, Real-Time Reporting & Dashboards, Fast-moving item analysis. The ERP now provides accurate stock visibility, instant sales reporting, and smooth coordination between sales, warehouse, and accounting.",
     about:
-      "Jameeco Weyn is a trusted supplier of quality spare parts, serving mechanics, workshops, and vehicle owners across the region with an extensive catalog of genuine and compatible parts.",
+      "Jameeco Weyn is one of the leading auto spare parts suppliers in Somalia, known for its wide product range and high customer demand. As the business grew, manual tools could no longer handle product volume, pricing updates, or stock accuracy. With Odoo ERP implemented by Hage Tech Solution, the company now operates with reliable stock control, faster sales operations, and clear financial visibility.",
     results: [
       "Reduced stockouts by 85% through automated reordering and demand forecasting.",
       "Improved inventory turnover by 30% by identifying and clearing slow-moving stock.",
@@ -265,11 +265,11 @@ export const caseStudies = [
     description:
       "Operating in both Uganda and Somalia, MGT Trading deals with the complexities of different tax regimes, currencies, and languages. Managing this with separate systems was proving impossible.",
     challenge:
-      "Reconciling accounts across two countries took weeks. Inventory visibility was poor, leading to missed sales opportunities in one market while stock sat idle in another.",
+      "MGT Trading faced stock inaccuracies, slow procurement planning, and limited visibility due to manual processes. Management struggled to track product availability, customer credit, and daily financial performance.",
     solution:
-      "We deployed a multi-currency, multi-company ERP setup. This allowed MGT to manage both country operations in a single system, with consolidated financial reporting and shared inventory visibility.",
+      "Hage Tech Solution deployed an integrated Odoo ERP system covering: Inventory & Stock Tracking, Sales & Customer Credit Management, Purchase & Supplier Management, Real-Time Reporting & Dashboards. This unified all operations into one accurate, real-time platform.",
     about:
-      "MGT Trading facilitates the flow of goods between East African nations, fostering economic growth and regional integration.",
+      "MGT Trading is a leading building materials supplier in Hargeisa,Somaliland offering cement, steel, plumbing, electrical, and finishing products. With Odoo ERP implemented by Hage Tech Solution, the company now operates with clearer visibility, faster processes, and stronger financial control.",
     results: [
       "Consolidated financial reporting time reduced from 3 weeks to 1 day.",
       "Improved cross-border inventory turnover by 35%.",
@@ -295,6 +295,55 @@ export const caseStudies = [
       role: "Finance Director",
       company: "MGT Trading",
       text: "Managing two different markets used to be a headache. Now, it's seamless. I can switch between Uganda and Somalia views with a click and see the whole picture instantly.",
+    }
+  },
+  {
+    id: 7,
+    name: "Optimum General Trading",
+    company: "Optimum General Trading",
+    category: "General Trading",
+    industry: "General Trading",
+    country: "Somalia",
+    city: "Mogadishu",
+    phone: "+252 61 500 0007",
+    email: "info@optimumtrading.com",
+    headline: "Streamlining Wholesale Distribution with Integrated ERP Solutions.",
+    title: "Transforming Wholesale Operations with Real-Time Business Intelligence.",
+    blurb:
+      "Optimum General Trading modernized their wholesale distribution operations with an integrated Odoo ERP system, enabling better accuracy and faster processes.",
+    description:
+      "Optimum General Trading is a growing wholesale distributor in Somalia. The company needed a modern ERP system to improve operational control, enhance accuracy, and provide clearer visibility across all business functions.",
+    challenge:
+      "Optimum General Trading struggled with manual stock tracking, slow procurement planning, and limited visibility over customer balances and daily sales. Inaccurate data made decision-making difficult and slowed overall operations.",
+    solution:
+      "Hage Tech Solution implemented an integrated Odoo ERP system covering: Inventory & Stock Tracking, Sales & Customer Credit, Purchase & Supplier Management, Real-Time Dashboards & Reporting. This unified all operations into one accurate, real-time platform.",
+    about:
+      "Optimum General Trading is a growing wholesale distributor in Somalia. With Odoo ERP implemented by Hage Tech Solution, the company now operates with better accuracy, faster processes, and clearer visibility across the business. OPTIMUM",
+    results: [
+      "Improved operational accuracy with real-time data visibility.",
+      "Faster procurement planning and inventory management.",
+      "Enhanced decision-making with comprehensive dashboards and reporting.",
+    ],
+    featuredStat: [
+      {
+        value: "Real-time",
+        label: "Data Visibility",
+      },
+      {
+        value: "Integrated",
+        label: "Operations",
+      },
+    ],
+    metric: "Real-time",
+    metricLabel: "Data Visibility",
+    coverImage: "/clients/optimum-gtc.jpeg",
+    image: "/clients/optimum-gtc.jpeg",
+    logo: "/clients/optimum-gtc.jpeg",
+    testimonial: {
+      name: "Management",
+      role: "Management Team",
+      company: "Optimum General Trading",
+      text: "The Odoo ERP system has transformed our operations, providing us with the accuracy and visibility we needed to grow our business effectively.",
     }
   },
 ]
